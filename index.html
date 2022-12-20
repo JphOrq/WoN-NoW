@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoN</title>
+    <link rel="stylesheet" type="text/css" href="WoN.css">
+    <link rel="icon" href="colorW.png" type="image/x-icon">
+    <script src="jquery-3.6.2.min.js"></script>
+</head>
+
+<body>
+
+    <div class="content">
+        <h5 class="text_shadows">WON</h5>
+    </div>
+
+    <div id="mainButton">
+        <a href="index.html"><button class="buttonWon">WON</button></a>
+        <a href="index2.html"><button class="buttonNow">NOW</button></a>
+    </div>
+
+    <!-- <div class="wheelColor">
+        <img src="wheelofNinong.gif" alt="wheeling">
+    </div> -->
+
+    <!-- <div class="wonText">
+        <img src="won.gif" alt="won text">
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h5 class="animateText">Wheel of Ninong</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainbox" id="mainbox">
+        <div class="box" id="box">
+            <div class="box1">
+                <span class="font span1"><h5>300.00</h5></span>
+                <span class="font span2"><h5>CHOCOLATE</h5></span>
+                <span class="font span3"><h5>200.00</h5></span>
+                <span class="font span4"><h5>20.00</h5></span>
+                <span class="font span5"><h5>100.00</h5></span>
+            </div>
+            <div class="box2">
+                <span class="font span1"><h5>BOKYA</h5></span>
+                <span class="font span2"><h5>50.00</h5></span>
+                <span class="font span3"><h5>500.00</h5></span>
+                <span class="font span4"><h5>JACKPOT</h5></span>
+                <span class="font span5"><h5>MANO KAY NINONG</h5></span>
+            </div>
+        </div>
+        <button class="spin" onclick="spin()">SPIN</button>
+    </div>
+
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+
+
+    <audio controls="controls" id="applause" src="Yehey.mp3" type="audion/mp3"></audio>
+    <audio controls="controls" id="wheel" src="marioKart.mp3" type="audion/mp3"></audio>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="WoN.js"></script>
+
+</body>
+
+</html>
+
+<!-- created by: whiteumbrella -->

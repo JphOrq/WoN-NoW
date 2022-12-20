@@ -1,0 +1,547 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: url(christmas-themed.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    flex-direction: column;
+    background-color: #eff8e2;
+}
+
+#mainButton {
+    position: fixed;
+    height: 450px;
+    width: 1010px;
+}
+
+.buttonWon {
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 50px;
+    outline: none;
+    background-color: transparent;
+    margin: 5px;
+    padding: 5px;
+}
+
+.buttonWon:hover {
+    background-color: white;
+}
+
+.buttonNow {
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 50px;
+    outline: none;
+    background-color: transparent;
+    margin: 5px;
+    padding: 5px;
+}
+
+.buttonNow:hover {
+    background-color: white;
+}
+
+:root {
+    --color-primary: #f6aca2;
+    --color-secondary: #f49b90;
+    --color-tertiary: #f28b7d;
+    --color-quaternary: #f07a6a;
+    --color-quinary: #ee6352;
+    /* --color-primary: #5192ED;
+    --color-secondary: #69A1F0;
+    --color-tertiary: #7EAEF2;
+    --color-quaternary: #90BAF5;
+    --color-quinary: #A2C4F5; */
+}
+
+.text_shadows {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: var(--color-primary);
+    color: transparent;
+    background-clip: text;
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.4rem;
+}
+
+.content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+    10% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    20% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+    }
+    30% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    40% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+    50% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+    60% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    }
+    70% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    }
+    80% {
+        text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+    }
+    90% {
+        text-shadow: 3px 3px 0 var(--color-secondary);
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(-12px, -12px);
+    }
+    50% {
+        transform: translate(-12px, -12px);
+    }
+    60% {
+        transform: translate(-12px, -12px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+
+/* .wheelColor {
+    top: 16%;
+    left: 9%;
+    position: fixed;
+} */
+
+
+/* .wonText {
+    top: 3%;
+    left: 8%;
+    position: fixed;
+} */
+
+.animateText {
+    text-transform: uppercase;
+    background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 40px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.mainbox {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-top: 3px;
+}
+
+.mainbox:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(newArrow4.png) no-repeat;
+    background-size: 10%;
+    left: 13%;
+    top: 45%;
+    transform: rotate(90deg);
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid #7cdf99;
+    overflow: hidden;
+    transition: all ease-in-out 5s;
+    transform: rotate(90deg);
+}
+
+span {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+}
+
+.span1 {
+    clip-path: polygon(0 17%, 0 50%, 50% 50%);
+    background-color: #fb13a6;
+    background: url(php300.png);
+}
+
+.span2 {
+    clip-path: polygon(0 17%, 30% 0, 50% 50%);
+    background: url(Fer.jpg);
+    background-color: #794538;
+}
+
+.span3 {
+    clip-path: polygon(30% 0, 71% 0, 50% 50%);
+    background: url(php200.png);
+    background-color: #fa4518;
+}
+
+.span4 {
+    clip-path: polygon(71% 0, 100% 18%, 50% 50%);
+    background: url(php20.jpg);
+    background-color: #197efc;
+}
+
+.span5 {
+    clip-path: polygon(100% 18%, 100% 50%, 50% 50%);
+    background: url(php100.jpg);
+    background-color: coral;
+}
+
+.box2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+.box2 .span1 {
+    background: #333;
+    background: url(bokya.jpg);
+}
+
+.box2 .span2 {
+    background: #794538;
+    background: url(php50.jpg)
+}
+
+.box2 .span3 {
+    background: #333;
+    background: url(php500.jpg)
+}
+
+.box2 .span4 {
+    background: #197efc;
+    background: url(php1000.jpeg)
+}
+
+.box2 .span5 {
+    background: coral;
+    background: url(manopo.jpeg);
+}
+
+.font {
+    color: black;
+    font-size: 20px;
+}
+
+.box1 .span1 h5 {
+    font-size: 50px;
+    position: absolute;
+    top: 34%;
+    right: 66%;
+    transform: rotate(200deg);
+    text-align: center;
+}
+
+.box1 .span2 h5 {
+    font-size: 27px;
+    position: absolute;
+    top: 24%;
+    right: 52%;
+    transform: rotate(-133deg);
+    text-align: center;
+}
+
+.box1 .span3 h5 {
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    right: 33%;
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+.box1 .span4 h5 {
+    font-size: 50px;
+    position: absolute;
+    top: 16%;
+    right: 13%;
+    transform: rotate(-45deg);
+    text-align: center;
+}
+
+.box1 .span5 h5 {
+    font-size: 50px;
+    position: absolute;
+    top: 35%;
+    right: 3%;
+    transform: rotate(-15deg);
+    text-align: center;
+}
+
+.box2 .span1 h5 {
+    font-size: 45px;
+    position: absolute;
+    top: 35%;
+    right: 63%;
+    transform: rotate(200deg);
+    text-align: center;
+}
+
+.box2 .span2 h5 {
+    font-size: 50px;
+    position: absolute;
+    top: 16%;
+    right: 60%;
+    transform: rotate(-130deg);
+    text-align: center;
+}
+
+.box2 .span3 h5 {
+    font-size: 50px;
+    position: absolute;
+    top: 10%;
+    right: 34%;
+    transform: rotate(270deg);
+    text-align: center;
+}
+
+.box2 .span4 h5 {
+    font-size: 35px;
+    position: absolute;
+    top: 22%;
+    right: 13%;
+    transform: rotate(310deg);
+    text-align: center;
+}
+
+.box2 .span5 h5 {
+    font-size: 19px;
+    position: absolute;
+    top: 39%;
+    right: 3%;
+    transform: rotate(-20deg);
+    text-align: center;
+}
+
+.spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background: #1d76e5;
+    color: #fff;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.spin:active {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+}
+
+.mainbox.animate:after {
+    animation: animateArrow 0.7s ease infinite;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.7px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-size: 15pt;
+    text-align: center;
+    user-select: none;
+    top: 320%;
+    right: -30%;
+    color: white;
+    font-weight: bold;
+}
+
+audio {
+    display: none;
+}
+
+@keyframes animateArrow {
+    50% {
+        right: -50px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #mainButton {
+        position: absolute;
+        top: 550px;
+        right: 200px;
+        height: 500px;
+        width: 50px;
+    }
+    .mainbox {
+        position: absolute;
+        top: 150px;
+        right: 50px;
+        height: 330px;
+        width: 330px;
+    }
+    .mainbox:after {
+        top: 150px;
+    }
+    .box1 .span1 h5 {
+        font-size: 30px;
+        position: absolute;
+        top: 34%;
+        right: 66%;
+        transform: rotate(200deg);
+        text-align: center;
+    }
+    .box1 .span2 h5 {
+        font-size: 15px;
+        position: absolute;
+        top: 24%;
+        right: 52%;
+        transform: rotate(-133deg);
+        text-align: center;
+    }
+    .box1 .span3 h5 {
+        font-size: 30px;
+        position: absolute;
+        top: 10%;
+        right: 33%;
+        transform: rotate(-90deg);
+        text-align: center;
+    }
+    .box1 .span4 h5 {
+        font-size: 30px;
+        position: absolute;
+        top: 16%;
+        right: 13%;
+        transform: rotate(-45deg);
+        text-align: center;
+    }
+    .box1 .span5 h5 {
+        font-size: 30px;
+        position: absolute;
+        top: 35%;
+        right: 3%;
+        transform: rotate(-15deg);
+        text-align: center;
+    }
+    .box2 .span1 h5 {
+        font-size: 25px;
+        position: absolute;
+        top: 36%;
+        right: 63%;
+        transform: rotate(200deg);
+        text-align: center;
+    }
+    .box2 .span2 h5 {
+        font-size: 30px;
+        position: absolute;
+        top: 16%;
+        right: 60%;
+        transform: rotate(-130deg);
+        text-align: center;
+    }
+    .box2 .span3 h5 {
+        font-size: 30px;
+        position: absolute;
+        top: 10%;
+        right: 34%;
+        transform: rotate(270deg);
+        text-align: center;
+    }
+    .box2 .span4 h5 {
+        font-size: 18px;
+        position: absolute;
+        top: 22%;
+        right: 13%;
+        transform: rotate(310deg);
+        text-align: center;
+    }
+    .box2 .span5 h5 {
+        font-size: 9px;
+        position: absolute;
+        top: 39%;
+        right: 3%;
+        transform: rotate(-20deg);
+        text-align: center;
+    }
+    #container {
+        top: -10%;
+    }
+}
