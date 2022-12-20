@@ -162,3 +162,11 @@ function animate() {
 }
 
 animate();
+
+function buttonWon() {
+    location.replace("index.html")
+}
+
+function buttonNow() {
+    location.replace("index2.html")
+}
