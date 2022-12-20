@@ -22,16 +22,12 @@ body {
     background-color: #eff8e2;
 }
 
-#mainButton {
-    position: fixed;
-    height: 450px;
-    width: 1010px;
-}
-
-.buttonWon {
+.buttonDesign {
+    position: absolute;
+    right: 80%;
+    top: 25%;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
     font-size: 20px;
     font-weight: bold;
     border: 1px solid white;
@@ -42,11 +38,14 @@ body {
     padding: 5px;
 }
 
-.buttonWon:hover {
+.buttonDesign:hover {
     background-color: white;
 }
 
-.buttonNow {
+.designButton {
+    position: absolute;
+    right: 75%;
+    top: 25%;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
@@ -59,7 +58,7 @@ body {
     padding: 5px;
 }
 
-.buttonNow:hover {
+.designButton:hover {
     background-color: white;
 }
 
@@ -444,12 +443,23 @@ audio {
 }
 
 @media only screen and (max-width:700px) {
-    #mainButton {
+    .buttonDesign {
         position: absolute;
-        top: 550px;
-        right: 200px;
-        height: 500px;
-        width: 50px;
+        right: 250px;
+        top: 115px;
+        background-color: #f6aca2;
+    }
+    .designButton {
+        position: absolute;
+        right: 120px;
+        top: 115px;
+        background-color: #f6aca2;
+    }
+    .buttonDesign:hover {
+        background-color: white;
+    }
+    .designButton:hover {
+        background-color: white;
     }
     .mainbox {
         position: absolute;
