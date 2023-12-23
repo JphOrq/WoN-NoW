@@ -29,7 +29,7 @@ body {
   cursor: pointer;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   border: 1px solid white;
   border-radius: 50px;
@@ -236,6 +236,17 @@ body {
   left: 13%;
   top: 53%;
   transform: rotate(90deg);
+  filter: hue-rotate(180deg); /* Adjust the hue value to change the color */
+  animation: moveArrow 0.3s linear infinite; /* Adjust the animation duration */
+}
+
+@keyframes moveArrow {
+  0% {
+    left: 13%; /* Starting position */
+  }
+  100% {
+    left: 14%; /* Ending position */
+  }
 }
 
 .box {
@@ -517,6 +528,13 @@ audio {
 }
 
 @media only screen and (max-width: 700px) {
+  /* Adjustments for screens with a maximum width of 700px */
+
+  body {
+    background: url(2023theme.JPG) no-repeat fixed;
+    background-size: cover; /* Ensure the background covers the entire page */
+  }
+
   .buttonDesign {
     position: absolute;
     right: 250px;
@@ -539,40 +557,28 @@ audio {
     background-color: white;
   }
 
-  .mainbox {
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    height: 330px;
-    width: 330px;
-  }
-
-  .mainbox:after {
-    top: 150px;
-  }
-
   .box1 .span1 h5 {
     font-size: 30px;
     position: absolute;
-    top: 34%;
-    right: 66%;
+    top: 36%;
+    right: 69%;
     transform: rotate(200deg);
     text-align: center;
   }
 
   .box1 .span2 h5 {
-    font-size: 15px;
+    font-size: 22px;
     position: absolute;
     top: 24%;
-    right: 52%;
+    right: 54%;
     transform: rotate(-133deg);
     text-align: center;
   }
 
   .box1 .span3 h5 {
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 33%;
     transform: rotate(-90deg);
     text-align: center;
@@ -581,8 +587,8 @@ audio {
   .box1 .span4 h5 {
     font-size: 30px;
     position: absolute;
-    top: 16%;
-    right: 13%;
+    top: 20%;
+    right: 19%;
     transform: rotate(-45deg);
     text-align: center;
   }
@@ -590,8 +596,8 @@ audio {
   .box1 .span5 h5 {
     font-size: 30px;
     position: absolute;
-    top: 35%;
-    right: 3%;
+    top: 36%;
+    right: 8%;
     transform: rotate(-15deg);
     text-align: center;
   }
@@ -608,8 +614,8 @@ audio {
   .box2 .span2 h5 {
     font-size: 30px;
     position: absolute;
-    top: 16%;
-    right: 60%;
+    top: 19%;
+    right: 63%;
     transform: rotate(-130deg);
     text-align: center;
   }
@@ -617,23 +623,23 @@ audio {
   .box2 .span3 h5 {
     font-size: 30px;
     position: absolute;
-    top: 10%;
-    right: 34%;
+    top: 12%;
+    right: 39%;
     transform: rotate(270deg);
     text-align: center;
   }
 
   .box2 .span4 h5 {
-    font-size: 18px;
+    font-size: 30px;
     position: absolute;
-    top: 22%;
-    right: 13%;
+    top: 20%;
+    right: 14%;
     transform: rotate(310deg);
     text-align: center;
   }
 
   .box2 .span5 h5 {
-    font-size: 9px;
+    font-size: 17px;
     position: absolute;
     top: 39%;
     right: 3%;
@@ -644,57 +650,29 @@ audio {
   #container {
     top: -10%;
   }
-}
-
-@media only screen and (max-width: 700px) {
-  /* Adjustments for screens with a maximum width of 700px */
-
-  body {
-    background-size: auto; /* Adjust background size */
-  }
-
-  .buttonDesign {
-    right: 20%; /* Adjust button position */
-    top: 10%; /* Adjust button position */
-    background-color: #f6aca2;
-  }
-
-  .designButton {
-    right: 10%; /* Adjust button position */
-    top: 10%; /* Adjust button position */
-    background-color: #f6aca2;
-  }
-
-  .buttonDesign:hover,
-  .designButton:hover {
-    background-color: white;
-  }
 
   .mainbox {
-    top: 20%; /* Adjust mainbox position */
+    top: 53%; /* Adjust mainbox position */
     right: 5%; /* Adjust mainbox position */
-    height: 200px; /* Adjust mainbox height */
-    width: 200px; /* Adjust mainbox width */
+    height: 350px; /* Adjust mainbox height */
+    width: 350px; /* Adjust mainbox width */
   }
 
   .mainbox:after {
-    top: 20%; /* Adjust arrow position */
+    top: 55%; /* Adjust arrow position */
   }
 
   /* Adjust font sizes and positions for different elements */
-  .box1 .span1 h5 {
-    font-size: 20px;
-    top: 25%;
-    right: 50%;
-    transform: rotate(200deg);
+
+  .spin {
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
   }
 
-  .box1 .span2 h5 {
-    font-size: 10px;
-    top: 18%;
-    right: 40%;
-    transform: rotate(-133deg);
+  #text1,
+  #text2 {
+    top: 390%;
   }
-
   /* ... (Adjust other elements as needed) ... */
 }
