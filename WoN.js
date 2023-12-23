@@ -19,27 +19,27 @@ function spin() {
   const element = document.getElementById("mainbox");
   let SelectedItem = "";
 
-  let thirty = shuffle([1890, 2250, 2610]);
+  let start = shuffle([1890, 2250, 2610]);
   let eighty = shuffle([1850, 2210, 2570]);
-  let bokya = shuffle([1770, 2130, 2490]);
+  let tryAgain = shuffle([1770, 2130, 2490]);
   let fifty = shuffle([1810, 2170, 2530]);
   let sixty = shuffle([1750, 2110, 2470]);
   let ninety = shuffle([1630, 1990, 2350]);
   let twenty = shuffle([1570, 1930, 2290]);
 
   let results = shuffle([
-    thirty[0],
+    start[0],
     eighty[0],
-    bokya[0],
+    tryAgain[0],
     fifty[0],
     sixty[0],
     ninety[0],
     twenty[0],
   ]);
 
-  if (thirty.includes(results[0])) SelectedItem = "200.00";
+  if (start.includes(results[0])) SelectedItem = "START AGAIN!";
   if (eighty.includes(results[0])) SelectedItem = "20.00";
-  if (bokya.includes(results[0])) SelectedItem = "BOKYA";
+  if (tryAgain.includes(results[0])) SelectedItem = "TRY AGAIN!";
   if (fifty.includes(results[0])) SelectedItem = "100.00";
   if (sixty.includes(results[0])) SelectedItem = "50.00";
   if (ninety.includes(results[0])) SelectedItem = "MANO KAY NINONG";
