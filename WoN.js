@@ -19,13 +19,14 @@ function spin() {
   const element = document.getElementById("mainbox");
   let SelectedItem = "";
 
-  let start = shuffle([1890, 2250, 2610]);
-  let eighty = shuffle([1850, 2210, 2570]);
-  let tryAgain = shuffle([1770, 2130, 2490]);
-  let fifty = shuffle([1810, 2170, 2530]);
-  let sixty = shuffle([1750, 2110, 2470]);
-  let ninety = shuffle([1630, 1990, 2350]);
-  let twenty = shuffle([1570, 1930, 2290]);
+  let start = shuffle([1890, 2250, 2610]); // -130
+  let eighty = shuffle([1760, 2120, 2480]); // 80
+  let tryAgain = shuffle([1770, 2130, 2490]); // 40
+  let fifty = shuffle([1810, 2170, 2530]); // -65
+  let sixty = shuffle([1745, 2105, 2465]); // 120
+  let ninety = shuffle([1630, 1990, 2350]); // -260
+  let twenty = shuffle([1370, 1730, 2090]); // 100
+  let oneHundred = shuffle([1470, 1830, 2190]);
 
   let results = shuffle([
     start[0],
@@ -35,22 +36,27 @@ function spin() {
     sixty[0],
     ninety[0],
     twenty[0],
+    oneHundred[0],
   ]);
 
-  // if (start.includes(results[0])) SelectedItem = "SPIN AGAIN!";
-  if (eighty.includes(results[0])) SelectedItem = "20.00";
-  // if (tryAgain.includes(results[0])) SelectedItem = "TRY AGAIN!";
+  if (eighty.includes(results[0])) SelectedItem = "50.00";
   if (fifty.includes(results[0])) SelectedItem = "100.00";
   if (sixty.includes(results[0])) SelectedItem = "50.00";
   if (ninety.includes(results[0])) SelectedItem = "MANO KAY NINONG";
-  if (twenty.includes(results[0])) SelectedItem = "CHOCOLATE";
+  if (twenty.includes(results[0])) SelectedItem = "100.00";
+  if (oneHundred.includes(results[0])) SelectedItem = "100.00";
 
   box.style.setProperty("transition", "all ease 5s");
   box.style.transform = "rotate(" + results[0] + "deg)";
   element.classList.remove("animate");
+
   setTimeout(function () {
     element.classList.add("animate");
   }, 5000);
+
+  // if (oneHundred.includes(results[0])) {
+  //   SelectedItem = "100.00";
+  // }
 
   // setTimeout(function () {
   //   applause.play();
