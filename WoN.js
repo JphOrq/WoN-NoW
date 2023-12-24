@@ -37,9 +37,9 @@ function spin() {
     twenty[0],
   ]);
 
-  if (start.includes(results[0])) SelectedItem = "SPIN AGAIN!";
+  // if (start.includes(results[0])) SelectedItem = "SPIN AGAIN!";
   if (eighty.includes(results[0])) SelectedItem = "20.00";
-  if (tryAgain.includes(results[0])) SelectedItem = "TRY AGAIN!";
+  // if (tryAgain.includes(results[0])) SelectedItem = "TRY AGAIN!";
   if (fifty.includes(results[0])) SelectedItem = "100.00";
   if (sixty.includes(results[0])) SelectedItem = "50.00";
   if (ninety.includes(results[0])) SelectedItem = "MANO KAY NINONG";
@@ -52,8 +52,34 @@ function spin() {
     element.classList.add("animate");
   }, 5000);
 
+  // setTimeout(function () {
+  //   applause.play();
+  //   Swal.fire({
+  //     title: SelectedItem,
+  //     width: 350,
+  //     padding: "2em",
+  //     color: "white",
+  //     background: "#fff url(nyanCat2.gif)",
+  //     backdrop: `
+  //             rgba(0,0,123,0.4)
+  //             url()
+  //             left top
+  //             no-repeat
+  //           `,
+  //   });
+  // }, 5500);
+
   setTimeout(function () {
-    applause.play();
+    if (start.includes(results[0])) {
+      SelectedItem = "SPIN AGAIN!";
+      fail.play();
+    } else if (tryAgain.includes(results[0])) {
+      SelectedItem = "TRY AGAIN!";
+      fail.play();
+    } else {
+      applause.play();
+    }
+
     Swal.fire({
       title: SelectedItem,
       width: 350,
@@ -61,11 +87,11 @@ function spin() {
       color: "white",
       background: "#fff url(nyanCat2.gif)",
       backdrop: `
-              rgba(0,0,123,0.4)
-              url()
-              left top
-              no-repeat
-            `,
+          rgba(0,0,123,0.4)
+          url()
+          left top
+          no-repeat
+        `,
     });
   }, 5500);
 
