@@ -535,6 +535,10 @@ audio {
     background-size: cover; /* Ensure the background covers the entire page */
   }
 
+  .text_shadows {
+    font-size: 55px;
+  }
+
   .buttonDesign {
     position: absolute;
     right: 250px;
