@@ -275,7 +275,7 @@ span {
 
 .span2 {
   clip-path: polygon(0 17%, 30% 0, 50% 50%);
-  background: url(Fer.jpg);
+  /* background: url(Fer.jpg); */
   background-color: #794538;
 }
 
@@ -346,13 +346,13 @@ span {
 }
 
 .box1 .span2 h5 {
-  font-size: 27px;
+  font-size: 50px;
   position: absolute;
-  top: 23%;
-  right: 59%;
+  top: 20%;
+  right: 61%;
   transform: rotate(-133deg);
   text-align: center;
-  color: red;
+  color: #fff;
   text-shadow: 1px 1px 0 #fff, 2px 2px 0 #fff, 3px 3px 0 #fff, -1px -1px 0 #000,
     -2px -2px 0 #000, -3px -3px 0 #000;
 }
@@ -571,10 +571,10 @@ audio {
   }
 
   .box1 .span2 h5 {
-    font-size: 22px;
+    font-size: 30px;
     position: absolute;
-    top: 24%;
-    right: 54%;
+    top: 21%;
+    right: 60%;
     transform: rotate(-133deg);
     text-align: center;
   }
