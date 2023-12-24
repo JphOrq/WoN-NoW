@@ -37,7 +37,7 @@ function spin() {
     twenty[0],
   ]);
 
-  if (start.includes(results[0])) SelectedItem = "START AGAIN!";
+  if (start.includes(results[0])) SelectedItem = "SPIN AGAIN!";
   if (eighty.includes(results[0])) SelectedItem = "20.00";
   if (tryAgain.includes(results[0])) SelectedItem = "TRY AGAIN!";
   if (fifty.includes(results[0])) SelectedItem = "100.00";
