@@ -37,12 +37,12 @@ function spin() {
     twenty[0],
   ]);
 
-  if (start.includes(results[0])) SelectedItem = "START AGAIN!";
+  if (start.includes(results[0])) SelectedItem = "SPIN AGAIN!";
   if (eighty.includes(results[0])) SelectedItem = "20.00";
   if (tryAgain.includes(results[0])) SelectedItem = "TRY AGAIN!";
   if (fifty.includes(results[0])) SelectedItem = "100.00";
   if (sixty.includes(results[0])) SelectedItem = "50.00";
-  if (ninety.includes(results[0])) SelectedItem = "MANO KAY NINONG";
+  if (ninety.includes(results[0])) SelectedItem = "MANO KAY NINANG";
   if (twenty.includes(results[0])) SelectedItem = "CHOCOLATE";
 
   box.style.setProperty("transition", "all ease 5s");
