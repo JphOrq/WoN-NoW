@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WoN</title>
-    <link rel="stylesheet" type="text/css" href="WoN.css">
+    <link rel="stylesheet" type="text/css" href="WoN.css" />
     <!-- <link rel="stylesheet" type="text/css" href="minty-bootstrap.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="icon" href="colorW.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" href="colorW.png" type="image/x-icon" />
     <script src="jquery-3.6.2.min.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="content">
-        <!-- <h5 class="text_shadows">WON</h5> -->
-        <h5 class="text_shadows">MERRY CHRISTMAS 2025</h5>
+      <!-- <h5 class="text_shadows">WON</h5> -->
+      <h5 class="text_shadows">MERRY CHRISTMAS 2025</h5>
     </div>
 
     <!-- <a href="index.html"><button class="buttonWon">WON</button></a>
         <a href="index2.html"><button class="buttonNow">NOW</button></a> -->
     <!-- <button class="buttonDesign" onclick="buttonWon()">WON</button>
     <button class="designButton" onclick="buttonNow()">NOW</button> -->
-
 
     <!-- <div class="wheelColor">
         <img src="wheelofNinong.gif" alt="wheeling">
@@ -43,71 +43,88 @@
     </div> -->
 
     <div class="mainbox" id="mainbox">
-        <div class="box" id="box">
-            <div class="box1">
-                <span class="font span1">
-                    <h5>200.00</h5>
-                </span>
-                <span class="font span2">
-                    <h5>100.00</h5>
-                </span>
-                <span class="font span3">
-                    <h5>TRY AGAIN!</h5>
-                </span>
-                <span class="font span4">
-                    <h5>50.00</h5>
-                </span>
-                <span class="font span5">
-                    <h5>100.00</h5>
-                </span>
-            </div>
-            <div class="box2">
-                <span class="font span1">
-                    <h5>TRY AGAIN!</h5>
-                </span>
-                <span class="font span2">
-                    <h5>50.00</h5>
-                </span>
-                <span class="font span3">
-                    <h5>100.00</h5>
-                </span>
-                <span class="font span4">
-                    <h5>JACKPOT</h5>
-                </span>
-                <span class="font span5">
-                    <h5>MANO KAY NINONG</h5>
-                </span>
-            </div>
+      <div class="box" id="box">
+        <div class="box1">
+          <span class="font span1">
+            <h5>200.00</h5>
+          </span>
+          <span class="font span2">
+            <h5>100.00</h5>
+          </span>
+          <span class="font span3">
+            <h5>TRYY AGAIN!</h5>
+          </span>
+          <span class="font span4">
+            <h5>50.00</h5>
+          </span>
+          <span class="font span5">
+            <h5>100.00</h5>
+          </span>
         </div>
-        <button class="spin" onclick="spin()">SPIN</button>
+        <div class="box2">
+          <span class="font span1">
+            <h5>TRY AGAIN!</h5>
+          </span>
+          <span class="font span2">
+            <h5>50.00</h5>
+          </span>
+          <span class="font span3">
+            <h5>100.00</h5>
+          </span>
+          <span class="font span4">
+            <h5>JACKPOT</h5>
+          </span>
+          <span class="font span5">
+            <h5>MANO KAY NINONG</h5>
+          </span>
+        </div>
+      </div>
+      <button class="spin" onclick="spin()">SPIN</button>
     </div>
 
     <div id="container">
-        <span id="text1"></span>
-        <span id="text2"></span>
+      <span id="text1"></span>
+      <span id="text2"></span>
     </div>
 
     <svg id="filters">
-        <defs>
-            <filter id="threshold">
-                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+      <defs>
+        <filter id="threshold">
+          <feColorMatrix
+            in="SourceGraphic"
+            type="matrix"
+            values="1 0 0 0 0
                       0 1 0 0 0
                       0 0 1 0 0
-                      0 0 0 255 -140" />
-            </filter>
-        </defs>
+                      0 0 0 255 -140"
+          />
+        </filter>
+      </defs>
     </svg>
 
-
-    <audio controls="controls" id="applause" src="Yehey.mp3" type="audion/mp3"></audio>
-    <audio controls="controls" id="wheel" src="marioKart.mp3" type="audion/mp3"></audio>
-    <audio controls="controls" id="fail" src="mario_fail.mp3" type="audion/mp3"></audio>
+    <audio
+      controls="controls"
+      id="applause"
+      src="Yehey.mp3"
+      type="audion/mp3"
+    ></audio>
+    <audio
+      controls="controls"
+      id="wheel"
+      src="marioKart.mp3"
+      type="audion/mp3"
+    ></audio>
+    <audio
+      controls="controls"
+      id="fail"
+      src="mario_fail.mp3"
+      type="audion/mp3"
+    ></audio>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="WoN.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
 
 <!-- created by: whiteumbrella -->
